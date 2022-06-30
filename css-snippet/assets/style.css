@@ -1,0 +1,107 @@
+body {
+    background-color:  rgb(70, 70, 70);
+    color:rgb(187, 187, 187);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+   width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-column: repeat(12, 1fr);
+}
+
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 35%;
+    height: 25vh;
+    border: 3px dashed white;
+    border-radius: 3px;
+}
+
+.card-header {
+    background-color: rgb(70, 70, 70);
+    margin: auto;
+    width: 75%;
+    position: relative;
+    margin-top: -20px;
+    border: 5px solid white;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*
+.code-card {
+    width: 35%;
+    height: 25vh;
+    border: 3px dashed white;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.card-header {
+    background-color: rgb(70, 70, 70);
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    position: relative;
+    margin-top: -50px;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.card-header h2 {
+    color:rgb(232, 102, 236);
+}
+
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+
+h1 {
+    color: rgb(232, 102, 236);
+    text-align: center;
+}
+
+.linear-gradient-background {
+    height: 300px;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+}
+*/
