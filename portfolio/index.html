@@ -1,51 +1,48 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dev. Nate</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body id="top">
+        <div class="topnav" id="myTopnav">
+            <a href="#top" class="split">Dev. Nate</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#news">News</a>
+            <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <div class="container">
             <div class="container-fluid">
-                <div class="nav-bar">
-                    <div class="nav-bar-h1">
-                        <h1><a href="#top">Dev Nate</a></h1>
-                    </div>
-                    <div class="nav-bar-ul">
-                        <ul>
-                            <li><a href="#about">About Me</a></li>
-                            <li><a href="#skill">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact Me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
                 <div class="header">
-                    <div class="head-info">
-                        <div class="head-info-h1">
-                            <h1>Nate Naranjo</h1>
-                        </div>
-                        <div class="head-info-p">
-                            <p>- Frontend Developer</p>
-                            <p>- Backend Developer</p>
-                            <p>- Blockchain Developer</p>
-                        </div>
+                    <div class="header-info">
+                        <h1>Nate Naranjo</h1>
+                        <p>I currently working on becoming a</p>
+                        <p>- Frontend Developer</p>
+                        <p>- Backend Developer</p>
+                        <p>- Blockchain Developer</p>
                     </div>
-                    <div class="head-img">
-                        <img src="./assets/img/coding.jpg">
+                    <div class="header-img">
+                        <img src="./assets/img/coding.png">
                     </div>
                 </div>
             </div>
             <div class="container-fluid">
-                <div id="about" class="section">
-                    <div class="section-h2">
-                        <h2>About Me</h2>
-                        <p>Test</p>
-                    </div>
+                <div class="about" id="about">
+                    <h2>About Me</h2>
+                    <p>This section will tell a little history about me.</p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="skills" id="contact">
+                    <h3>Skills</h3>
                 </div>
             </div>
         </div>
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
