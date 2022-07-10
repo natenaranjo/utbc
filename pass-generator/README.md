@@ -4,7 +4,7 @@
 
 ## Live Link
 
-[Live Link]()
+[Live Link](https://natenaranjo.github.io/utbc/pass-generator/)
 
 ---
 
