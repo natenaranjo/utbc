@@ -3,50 +3,129 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dev. Nate</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body id="top">
-        <div class="topnav" id="myTopnav">
-            <div class="topnav-icon">
-                <a href="#top" class="split">.Dev_Nate()</a>
-            </div>
-            <div class="topnav-a">
-                <a href="#about">.About()</a>
-                <a href="#skills">.Skills()</a>
-                <a href="#projects">.Projects()</a>
-                <a href="#contact">.Contact()</a>
-                <a href="javascript:void(0);" class="icon" onclick="navBar()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+        <nav>
+            <ul class="menu">
+              <li class="logo"><a href="#top">.Nate()</a></li>
+              <li class="item"><a href="#about">.About()</a></li>
+              <li class="item"><a href="#projects">.Projects()</a></li>
+              <li class="item"><a href="#contact">.Contact()</a></li>
+              <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="container">
+        <section id="header">
             <div class="container-fluid">
-                <div class="header">
-                    <div class="header-info">
-                        <h1>Nate Naranjo</h1>
-                        <p>I currently working on becoming a</p>
+                <div class="row">
+                    <div class="column" id="header-info">
+                        <h1>.Nate()</h1>
+                        <p>Currently working on becoming a</p>
+                        <p>- UI/UX Designer</p>
                         <p>- Fullstack Developer</p>
                         <p>- Blockchain Developer</p>
                     </div>
-                    <div class="header-img">
-                        <img src="./assets/img/coding-black.png">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="column reveal fade-bottom">
+                        <div class="about-info">
+                            <h2>About</h2>
+                            <h4>I'm Nate Naranjo. A designer, creator, and problem sovler.</h4>
+                            <p>Working with computers around the early age learning everything I could about them.  First few computers I did completely destroy as not know what could or could not be done on the console.  Over time learning I started programming with a good friend who was in IT at the time.</p>
+                            <p>I've always had a curiousity on programming due to the fact my mother programmed the hospital computer back when they were the good ole IBM punch cards.  I would sit and watch for hours as she did work in the hospital.</p>
+                            <p>Around the early 2000's I begain to create HTML pages for small roleplay groups on the yahoo chat groups. As well as creating pages for small businesses. This has lead me to focus more on the asthetic and appeal of mobile designs as technology progressed to small devices.</p>
+                        </div>
+                    </div>
+                    <div class="column reveal fade-bottom">
+                        <div class="about-img">
+                            <img src="/assets/img/codingblack.webp">
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="projects">
             <div class="container-fluid">
-                <div class="about" id="about">
-                    <h2>About Me</h2>
-                    <p>This section will tell a little history about me.</p>
+                <h2>Projects</h2>
+                <div class="row">
+                    <div class="column-row">
+                        <div class="container-left reveal fade-left grow">
+                            <div class="box-text-left">
+                                <h3>Github - Blog</h3>
+                                <p>Working on a Blog Page to record my progress of learning different coding languages.</p>
+                            </div>
+                            <div class="box-image-left">
+                                <a href="https://natenaranjo.github.io/">
+                                    <img src="./assets/img/github.webp">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="column-row">
+                        <div class="container-right reveal fade-right grow">
+                            <div class="box-text-right">
+                                <h3>Youtube</h3>
+                            </div>
+                            <div class="box-image-right">
+                                <a href="https://www.youtube.com/channel/UCw--32S_faF7ImPkRbnDFBQ">
+                                    <img src="./assets/img/youtube.wep.png">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="row">
+                    <div class="column-row">
+                        <div class="container-left reveal fade-left grow">
+                            <div class="box-text-left">
+                                <h3>Twitter</h3>
+                                <p>Communicating with others to update on progress of 100 days of coding challenge.  Learning to social network with other like minded individuals to expand network.  Give and recieve coding challenge, work on team projects.</p>
+                            </div>
+                            <div class="box-image-left">
+                                <a href="https://twitter.com/NathanNaranjo12">
+                                    <img src="./assets/img/twitter.webp">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>                   
                 </div>
             </div>
+        </section>
+        <section id="contact">
             <div class="container-fluid">
-                <div class="skills" id="contact">
-                    <h3>Skills</h3>
+                <h2>Let's creating something beautiful!</h2>
+                <div class="row" id="message">
+                    <div class="column">
+                        <form action="">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <label for="textarea">Message:</label>
+                            <textarea id="text" name="text" placeholder="What would you like to send?">
+                            </textarea>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                    <div class="column">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/natenaranjo/" class="fa fa-linkedin-square"><div class="social-text">Linkedin</div></a> 
+                            <a href="https://github.com/natenaranjo" class="fa fa-github-square"><div class="social-text">GitHub</div></a>                            
+                            <a href="https://twitter.com/NathanNaranjo12" class="fa fa-twitter-square"><div class="social-text">Twitter</div></a>
+                            <a href="https://www.youtube.com/channel/UCw--32S_faF7ImPkRbnDFBQ" class="fa fa-youtube-square"><div class="social-text">Youtube</div></a> 
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
